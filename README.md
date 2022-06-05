@@ -1,4 +1,4 @@
-# Rotating_Obstacle_Chaser
+# Rotating Obstacle Chaser
 
 YouTube video link: 
 https://youtu.be/qoW3Q4s6ehM
@@ -12,13 +12,13 @@ constant rotation. The distance detected by ultrasonic sensor goes to BASYS 3 FP
 detects an object within a predetermined range by user, buzzer turns on and warn. 
 
 ## The Design Specification Plan
-Components and Tools
+### Components and Tools
 
-• BASYS 3
-• SG90 Servo Motor
-• Arduino and prototype Shield as 5V Power Source
-• Breadboard and Wires
-• 5V Active Buzzer
+- BASYS 3
+- SG90 Servo Motor
+- Arduino and prototype Shield as 5V Power Source
+- Breadboard and Wires
+- 5V Active Buzzer
 
 Starting from servo motor, it is a motor that is used to move the tip of it to some predetermined 
 degrees. It takes the information signal to what degrees it must go from BASYS 3 FPGA board. 
