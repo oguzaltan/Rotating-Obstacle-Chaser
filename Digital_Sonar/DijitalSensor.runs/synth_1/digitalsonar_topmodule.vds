@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Dec 21 15:29:06 2017
+# Process ID: 14912
+# Current directory: C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.runs/synth_1
+# Command line: vivado.exe -log digitalsonar_topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source digitalsonar_topmodule.tcl
+# Log file: C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.runs/synth_1/digitalsonar_topmodule.vds
+# Journal file: C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source digitalsonar_topmodule.tcl -notrace
+Command: synth_design -top digitalsonar_topmodule -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6280 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 345.410 ; gain = 95.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'digitalsonar_topmodule' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/digitalsonar_topmodule.vhd:16]
+INFO: [Synth 8-3491] module 'distance_sensor' declared at 'C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/distance_sensor.vhd:5' bound to instance 'U1' of component 'distance_sensor' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/digitalsonar_topmodule.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'distance_sensor' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/distance_sensor.vhd:17]
+INFO: [Synth 8-3491] module 'sevensegment_decoder' declared at 'C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/sevensegment_decoder.vhd:4' bound to instance 'decoder' of component 'sevensegment_decoder' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/distance_sensor.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'sevensegment_decoder' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/sevensegment_decoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'sevensegment_decoder' (1#1) [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/sevensegment_decoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'distance_sensor' (2#1) [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/distance_sensor.vhd:17]
+INFO: [Synth 8-3491] module 'servo_pwm' declared at 'C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/servo_pwm.vhd:4' bound to instance 'U2' of component 'servo_pwm' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/digitalsonar_topmodule.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/servo_pwm.vhd:20]
+	Parameter count_max bound to: 2000000 - type: integer 
+	Parameter duty_max bound to: 240000 - type: integer 
+	Parameter duty_min bound to: 60000 - type: integer 
+	Parameter duty_delta bound to: 1000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm' (3#1) [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/servo_pwm.vhd:20]
+INFO: [Synth 8-3491] module 'buzzer_warning' declared at 'C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/buzzer_warning.vhd:4' bound to instance 'U3' of component 'buzzer_warning' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/digitalsonar_topmodule.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'buzzer_warning' [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/buzzer_warning.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'buzzer_warning' (4#1) [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/buzzer_warning.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'digitalsonar_topmodule' (5#1) [C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.srcs/sources_1/new/digitalsonar_topmodule.vhd:16]

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Dec 21 15:29:06 2017
+# Process ID: 14912
+# Current directory: C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.runs/synth_1
+# Command line: vivado.exe -log digitalsonar_topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source digitalsonar_topmodule.tcl
+# Log file: C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.runs/synth_1/digitalsonar_topmodule.vds
+# Journal file: C:/Users/oðuz/Desktop/DijitalSonar/DijitalSensor.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source digitalsonar_topmodule.tcl -notrace

@@ -1,0 +1,65 @@
+    library IEEE;
+    use IEEE.STD_LOGIC_1164.ALL;
+    
+    entity servo_pwm is
+    
+    Generic(
+    --100 MHz = 10 ns, our PWM period is 20 ms
+    count_max : integer := 2000000; --  20 ms/(100MHz = 10 ns)
+    duty_max : integer := 240000; -- maximum duty cycle / count_max == 2 ms / 10 ns
+    duty_min : integer := 60000; -- minimum duty cycle / count_max == 1 ms/ 10ns
+    duty_delta : integer := 1000 -- sets the speed
+    );
+    
+    Port( clk : in STD_LOGIC;
+    stop : in STD_LOGIC;
+    pwm : out std_logic
+    );
+    end servo_pwm;
+    
+    architecture Behavioral of servo_pwm is
+    
+    signal counter: integer range 0 to count_max := 0;
+    signal duty : integer range duty_min to duty_max := duty_min;
+    
+    begin
+    
+    prescaler: process(all)
+    
+    variable direction_up : boolean := true;
+    begin 
+    if rising_edge(clk) then
+   
+      if counter < count_max then
+      counter <= counter + 1;
+    
+      else 
+         if direction_up then
+           if duty < duty_max and stop = '0' then
+            duty <= duty + duty_delta;
+           else
+            direction_up := false;
+           end if;  
+         else
+           if duty > duty_min and stop = '0' then
+            duty <= duty - duty_delta;
+           else
+            direction_up := true;
+           end if;
+        end if;
+       counter <= 0;
+      end if;
+     end if;
+   end process;
+    
+    pwm_s: process(all)
+    begin
+    
+      if counter < duty and stop = '0' then
+       pwm <= '1';
+      else
+       pwm <= '0';
+      end if;
+    
+    end process;
+    end Behavioral;
