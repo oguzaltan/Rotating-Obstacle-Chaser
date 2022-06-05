@@ -1,9 +1,9 @@
-# Rotating Obstacle Chaser
+# Rotating Obstacle Chaser using BASYS 3 FPGA
 
 YouTube video link: 
 https://youtu.be/qoW3Q4s6ehM
 
-Detailed report with related photos **EEE102 Digital Design Course Project Report Oğuz Altan.pdf** can be found in this repo. 
+Detailed report **EEE102 Digital Design Course Project Report Oğuz Altan.pdf** with related photos and source code as text can be found in this repo. Permalink for the report [EEE102 Digital Design Course Project Report](https://github.com/oguzaltan/Rotating_Obstacle_Chaser/blob/a2d18c4d1a63d76edf8d8219cff79e51c7b286c2/EEE102%20Digital%20Design%20Course%20Project%20Report%20O%C4%9Fuz%20Altan.pdf)
 
 ## Abstract / Objective
 Aim of this project is make a rotating obstacle chaser. I use a servo motor and ultrasonic sensor 
