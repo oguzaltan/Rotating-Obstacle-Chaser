@@ -11,6 +11,8 @@ to measure the distance. The sensor is mounted on the top of motor, so it rotate
 constant rotation. The distance detected by ultrasonic sensor goes to BASYS 3 FPGA. When sensor 
 detects an object within a predetermined range by user, buzzer turns on and warn. 
 
+![image](https://github.com/user-attachments/assets/f1b05458-185f-41cd-b452-3756f9410a36)
+
 ## The Design Specification Plan
 ### Components and Tools
 
